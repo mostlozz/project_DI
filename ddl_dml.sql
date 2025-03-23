@@ -3,7 +3,7 @@
 cards
 */
 
-create table cards(
+create table if not exists cards(
 	card_num varchar(128), 
 	account varchar(128), 
 	create_dt date,
@@ -602,7 +602,7 @@ accounts
 */
 
 
-create table accounts(
+create table if not exists accounts(
 	account varchar(128), 
 	valid_to date, 
 	client integer,
@@ -772,7 +772,7 @@ clients
 */
 
 
-create table clients(
+create table if not exists clients(
     client_id varchar(128), 
     last_name varchar(128), 
     first_name varchar(128), 
